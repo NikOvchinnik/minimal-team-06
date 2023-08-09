@@ -1,14 +1,20 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  color: var(--primary-text-color);
-  background-color: var(--background-color);
+  font-size: 18px;
+  color: var(--primary-color);
+  background-color: var(--white-color);
 }
 
 .container {
-  max-width: 320px;
-  padding: 0 20px;
+  width: 100%;
+  padding: 0 16px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -18,9 +24,9 @@ body {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
     .container {
-        max-width: 1280px;
-        padding: 0 16px;
+        max-width: 1440px;
+        padding: 0 60px;
     }
 }

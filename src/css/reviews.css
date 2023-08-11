@@ -1,1 +1,124 @@
 /* Artem */
+.section-reviews {
+  background-color: var(--background-secondary-color);
+}
+.reviews-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 36px 16px;
+}
+.reviews-list {
+  display: flex;
+}
+.reviews-title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px; /* 150% */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.tablet,
+.dekstop {
+  display: none;
+}
+.review {
+  display: flex;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+.review-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.review-mobile-icon {
+  margin-right: 18px;
+  width: 48px;
+  height: 48px;
+}
+.review-icon {
+  display: none;
+}
+.review-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 177.778% */
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.review-time {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  color: var(--primary-color);
+}
+.review-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .tablet {
+    display: block;
+  }
+  .reviews-title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .reviews-list {
+    gap: 16px;
+  }
+  .review-block {
+    margin-bottom: 14px;
+  }
+  .review-mobile-icon {
+    display: none;
+  }
+  .review-icon {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin-right: 18px;
+  }
+  .review-title {
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .review-time {
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.8;
+  }
+  .review-text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .reviews-container {
+    padding: 36px 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-container {
+    padding: 60px;
+  }
+  .dekstop {
+    display: block;
+  }
+  .reviews-list {
+    gap: 24px;
+  }
+  .review {
+    padding: 32px;
+  }
+  .review-block {
+    margin-bottom: 16px;
+  }
+}

@@ -5,69 +5,85 @@
 }
 
 .hero-container {
-    display: flex;
-    gap: 25px;
+    /* display: flex; */
+    /* gap: 25px; */
+    background-image: url(../img/hero-mob.jpg);
+    background-repeat: no-repeat;
 }
 
 .first-hero-container {
-    width: 983px;
+    /* width: 983px;
     height: 530px;
     background-image: url(../img/hero-1.jpg), url(../img/hero-2.jpg);
     background-size: 310px 329px, 648px 530px ;
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom left, top right;
+    background-position: bottom left, top right; */
+    
 }
 
 .hero-title {
-    max-width: 648px;
+    /* max-width: 648px; */
+    max-width: 285px;
     color: var(--primary-color);
     font-family: Playfair Display;
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     text-transform: uppercase;
-    padding-bottom: 380px;
+    /* padding-bottom: 380px; */
+    padding-top: 140px;
+    padding-bottom: 14px;
 }
 
 .second-hero-container {
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 312px;
     height: 337px;
-    background-image: url(../img/hero-3.jpg);
+    background-image: url(../img/hero-3.jpg); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
 }
 
 .hero-text {
-    max-width: 312px;
-    margin-bottom: 30px;
-    padding-top: 396px;
+    /* max-width: 312px; */
+    max-width: 343px;
+    /* margin-bottom: 30px;
+    padding-top: 396px; */
     color: var(--primary-color);
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
 }
 
 .hero-btn {
-    padding: 17px 65px;
+    /* padding: 17px 65px; */
+    padding: 12px 65px;
     background: var(--primary-color);
     display: flex;
     width: 224px;
-    height: 50px;
-    padding: 17px 65px;
+    /* height: 50px; */
     justify-content: center;
     align-items: center;
     gap: 6px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
+    margin-bottom: 313px;
 }
 
 .hero-btn-link {
     color: var(--white-color);
     font-family: Roboto;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.33;
+    /* line-height: 1.33; */
+    line-height: 1.5;
 }
 
 /*----------MOBILE------------*/
@@ -76,8 +92,89 @@
 
 /*----------TABLET------------*/
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        background-image: none;
+    }
+
+    .first-hero-container {
+        width: 704px;
+        height: 528px;
+        background-image: url(../img/hero-tab-1.jpg), url(../img/hero-tab-2.jpg);
+        background-size: 308px 329px, 367px 530px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom left, top right;
+    }
+
+    .hero-title {
+        max-width: 648px;
+        font-size: 50px;
+        padding-top: 0;
+        padding-bottom: 410px;
+    }
+
+    .second-hero-container {
+        gap: 30px;
+    }
+
+    .hero-text {
+        max-width: 312px;
+        font-size: 18px;
+    }
+
+    .hero-btn {
+        padding: 17px 65px;
+        height: 50px;
+        margin-bottom: 100px;
+    }
+
+    .hero-btn-link {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+}
 
 /*----------DESKTOP------------*/
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+    .hero-container {
+            display: flex;
+            gap: 25px;
+            flex-direction: row;
+        }
+        
+    .first-hero-container {
+        width: 983px;
+        height: 530px;
+        background-image: url(../img/hero-1.jpg), url(../img/hero-2.jpg);
+        background-size: 310px 329px, 648px 530px ;
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom left, top right;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-title {
+        padding-bottom: 380px;
+    }
+
+    .second-hero-container {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 312px;
+        height: 337px;
+        background-image: url(../img/hero-3.jpg);
+    }
+
+    .hero-text {
+        padding-top: 396px;
+    }
+
+}

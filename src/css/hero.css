@@ -1,1 +1,83 @@
 /* Anastasiia */
+
+.hero {
+    background-color: var(--white-color);
+}
+
+.hero-container {
+    display: flex;
+    gap: 25px;
+}
+
+.first-hero-container {
+    width: 983px;
+    height: 530px;
+    background-image: url(../img/hero-1.jpg), url(../img/hero-2.jpg);
+    background-size: 310px 329px, 648px 530px ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, top right;
+}
+
+.hero-title {
+    max-width: 648px;
+    color: var(--primary-color);
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding-bottom: 380px;
+}
+
+.second-hero-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 312px;
+    height: 337px;
+    background-image: url(../img/hero-3.jpg);
+}
+
+.hero-text {
+    max-width: 312px;
+    margin-bottom: 30px;
+    padding-top: 396px;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hero-btn {
+    padding: 17px 65px;
+    background: var(--primary-color);
+    display: flex;
+    width: 224px;
+    height: 50px;
+    padding: 17px 65px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.hero-btn-link {
+    color: var(--white-color);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+}
+
+/*----------MOBILE------------*/
+
+@media screen and (min-width: 375px) {}
+
+/*----------TABLET------------*/
+
+@media screen and (min-width: 768px) {}
+
+/*----------DESKTOP------------*/
+
+@media screen and (min-width: 1440px) {}

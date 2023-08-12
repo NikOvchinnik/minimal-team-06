@@ -1,65 +1,127 @@
 /* Kristina */
-.footer-container {
+.footer {
     background-color: var(--primary-color);
-    padding-top: 36px;
-    padding-bottom: 16px;
-}
-.footer-space {
+    padding: 36px 0 16px 0;
+  }
+  
+  .footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-   gap: 20px;
-}
-
-.footer-logo {
+  }
+  
+  .footer-logo {
     margin-bottom: 42px;
-    margin-top: 6px;
-}
-.footer-svg {
-    fill: var(--white-color);
-}
-.footer-social-media-container {
     display: flex;
-    margin-right: 0;
-}
-.footer-social-media {
+    align-items: center;
+    padding-top: 6px;
+  }
+  
+  .footer-logo-icon {
+    fill: var(--white-color);
+    width: 100px;
+    height: 16px;
+  }
+  
+  .footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+  
+  .footer-nav-link {
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .address-maps-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 35px;
+  }
+  
+  .address-maps-text {
+    color: var(--white-color);
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+  }
+  
+  .address-contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 64px;
+  }
+  
+  .address-contact-link {
+    color: var(--white-color);
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+  }
+  
+  .address-email {
+    display: none;
+  }
+  
+  .footer-socials-list {
     display: flex;
     gap: 16px;
-}
-.footer-text-style {
-    color: var(--white-color);
-font-weight: 400;
-line-height: 1.5;
-}
-
-.footer-navigatoin {
-    margin-bottom: 36px;
-}
-.footer-nav-item:not(:last-child) {
-    margin-bottom: 8px;
-}
-.footer-address-item {
-    margin-bottom: 8px;
-}
-.footer-paragraph-item {
-    margin-bottom: 35px;
-}
-.footer-telnumb-item {
-    margin-bottom: 8px;
-}
-.meta-container {
-    margin-bottom: 64px;
-    margin-left: 0;
-}
-.footer-copyright {
+  }
+  
+  .footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-socials-icon {
+    width: 28px;
+    height: 28px;
+    fill: var(--white-color);
+  }
+  
+  .footer-privacy {
     text-align: center;
     color: var(--white-color);
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.08em;
-}
-@media screen and (max-width: 767px) {
-.footer-email-item {
-    display: none;
-}
-}
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.099em;
+    opacity: 0.6;
+  }
+  
+  .footer-privacy-link {
+      text-decoration: underline;
+  }
+  @media screen and (min-width: 768px) {
+    .footer {
+       padding: 36px 0; 
+    }
+    .footer-nav-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-logo {
+        padding-top: 12px;
+        margin-bottom: 32px;
+        margin-right: 249px;
+        align-items: flex-end;
+    }
+    .footer-logo-icon {
+        width: 127px;
+    }
+    
+    .footer-nav-list {
+        gap: 16px;
+        margin-top: 8px;
+    }
+    .address-maps-list {
+        gap: ;
+    }
+  }

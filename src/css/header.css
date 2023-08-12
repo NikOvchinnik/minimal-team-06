@@ -1,1 +1,84 @@
 /* Nikita */
+.header {
+  background-color: var(--background-secondary-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  padding: 36px 0;
+  fill: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo-icon {
+  width: 100px;
+  height: 16px;
+}
+
+.header-navigation {
+  display: none;
+}
+
+.burger-open-btn {
+  background-color: transparent;
+  border: none;
+  padding: 28px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    padding: 40px 0;
+  }
+
+  .header-logo-icon {
+    width: 127px;
+    height: 16px;
+  }
+
+  .burger-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-logo {
+    padding: 26px 0;
+  }
+
+  .header-navigation {
+    display: block;
+  }
+
+  .header-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 0;
+  }
+
+  .header-link {
+    line-height: 1.5;
+  }
+
+  .burger-open-btn {
+    display: none;
+  }
+}

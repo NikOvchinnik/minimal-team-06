@@ -1,182 +1,139 @@
 /* Anastasiia */
-
 .hero {
-    background-color: var(--white-color);
-}
-
-.hero-container {
-    background-image: url(../img/hero-mob.jpg);
-    background-repeat: no-repeat;
+  background-image: url(../img/hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 140px 0 313px 0;
 }
 
 .hero-title {
-    max-width: 285px;
-    color: var(--primary-color);
-    font-family: Playfair Display;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    text-transform: uppercase;
-    padding-top: 140px;
-    padding-bottom: 14px;
-}
-
-.second-hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
+  max-width: 285px;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .hero-text {
-    max-width: 343px;
-    color: var(--primary-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
+  max-width: 343px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 28px;
 }
 
 .hero-btn {
-    padding: 12px 65px;
-    background-color: var(--primary-color);
-    display: flex;
-    width: 224px;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 313px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--white-color);
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
+  padding: 12px 65px;
+  background-color: var(--primary-color);
+  display: flex;
+  width: 224px;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover {
-    background-color: var(--hover-color);
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hover-color);
 }
-
-/*----------MOBILE------------*/
-
-@media screen and (min-width: 375px) {
 
 @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero-container {
-            background-image: url(../img/hero-mob-2x.jpg);
-        }
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero-mob-2x.jpg);
+  }
 }
-
-/*----------TABLET------------*/
 
 @media screen and (min-width: 768px) {
+  .hero {
+    background-image: none;
+    padding: 60px 0 100px 0;
+  }
 
+  .hero-first-container {
+    width: 704px;
+    height: 528px;
+    background-image: url(../img/hero-tab-1.jpg), url(../img/hero-tab-2.jpg);
+    background-size: 308px 329px, 367px 530px;
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right;
+  }
 
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        background-image: none;
-    }
-
-    .first-hero-container {
-        width: 704px;
-        height: 528px;
-        background-image: url(../img/hero-tab-1.jpg), url(../img/hero-tab-2.jpg);
-        background-size: 308px 329px, 367px 530px;
-        background-repeat: no-repeat, no-repeat;
-        background-position: bottom left, top right;
-    }
-
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .first-hero-container {
-            background-image: url(../img/hero-tab-1-2x.jpg), url(../img/hero-tab-2-2x.jpg);
-        }
+    .hero-first-container {
+      background-image: url(../img/hero-tab-1-2x.jpg),
+        url(../img/hero-tab-2-2x.jpg);
     }
+  }
 
-    .hero-title {
-        max-width: 648px;
-        font-size: 50px;
-        padding-top: 0;
-        padding-bottom: 410px;
-    }
+  .hero-title {
+    max-width: 648px;
+    font-size: 50px;
+  }
 
-    .second-hero-container {
-        gap: 30px;
-    }
+  .hero-text {
+    margin-top: 32px;
+    margin-bottom: 30px;
+    max-width: 312px;
+    font-size: 18px;
+  }
 
-    .hero-text {
-        max-width: 312px;
-        font-size: 18px;
-    }
-
-    .hero-btn {
-        padding: 17px 65px;
-        height: 50px;
-        margin-bottom: 0;
-        font-size: 18px;
-        line-height: 1.33;
-    }
-
+  .hero-btn {
+    padding: 17px 65px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
 
-/*----------DESKTOP------------*/
-
 @media screen and (min-width: 1440px) {
-    .hero-container {
-            display: flex;
-            gap: 25px;
-            flex-direction: row;
-        }
-        
-    .first-hero-container {
-        width: 983px;
-        height: 530px;
-        background-image: url(../img/hero-1.jpg), url(../img/hero-2.jpg);
-        background-size: 310px 329px, 648px 530px ;
-        background-repeat: no-repeat, no-repeat;
-        background-position: bottom left, top right;
-        display: flex;
-        flex-direction: row;
-    }
+  .hero {
+    padding: 64px 0 100px 0;
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-first-container {
+    width: 983px;
+    height: 530px;
+    background-image: url(../img/hero-1.jpg), url(../img/hero-2.jpg);
+    background-size: 310px 329px, 648px 530px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .first-hero-container {
-            background-image: url(../img/hero-1-2x.jpg), url(../img/hero-2-2x.jpg);
-        }
+    .hero-first-container {
+      background-image: url(../img/hero-1-2x.jpg), url(../img/hero-2-2x.jpg);
     }
+  }
 
-    .hero-title {
-        padding-bottom: 380px;
-    }
+  .hero-second-container {
+    background-image: url(../img/hero-3.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 312px 337px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 
-    .second-hero-container {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 312px;
-        height: 337px;
-        background-image: url(../img/hero-3.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .first-hero-container {
-            background-image: url(../img/hero-3-2x.jpg);
-        }
+    .hero-second-container {
+      background-image: url(../img/hero-3-2x.jpg);
     }
-
-    .hero-text {
-        padding-top: 396px;
-    }
+  }
 
 }

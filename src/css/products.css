@@ -1,1 +1,23 @@
 /* Sasha */
+.products {
+padding-top: 64px;
+}
+
+.product-title { 
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;    
+    text-transform: uppercase;
+    margin-bottom: 33px;
+    text-align: center;
+}
+
+.product-img {
+    margin-bottom: 16px;
+}
+
+
+.product-text {
+    font-size: 16px;
+    line-height: 1.5;    
+} 

@@ -1,4 +1,7 @@
 /* Sasha */
+.bestsellers {
+padding-bottom: 64px;
+}
 
 .bestsellers-title {    
     font-size: 28px;    
@@ -9,23 +12,30 @@
     text-align: center;
 }
 
-.bestseller-ul {
+.bestseller-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;  
     gap: 30px;
+}
+
+.bestseller-item {
+    width: 100%;
 }
 
 .bestsellers-img {
     margin-bottom: 14px;
 }
 
-.bestsellers-p {    
-    font-size: 16px;    
+.bestsellers-text {    
+    font-size: 16px;
+    font-weight: 400; 
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
-.bestsellers-p-price {    
+.bestsellers-price {    
     font-size: 16px;    
     font-weight: 700;
     line-height: 1.5;     

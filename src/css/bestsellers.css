@@ -1,9 +1,6 @@
 /* Sasha */
 
-@media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-    }
+
 
         .bestsellers {
             padding-bottom: 64px;
@@ -50,15 +47,11 @@
         .tab-img {
             display: none;
         }
-}
+
 
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
+    
     .tab-img {
         display: block;
     }
@@ -108,13 +101,7 @@
 
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-        padding: 0 60px;
-    }
-
-    
-
+   
 
     .hero-bestseller {
         min-width: 536px; 

@@ -1,9 +1,7 @@
 /* Sasha */
-
 .products {
   padding-bottom: 64px;
 }
-
 .product-title {
   font-size: 28px;
   font-weight: 400;
@@ -63,7 +61,6 @@
   .product-item-desc {
     display: block;
   }
-
   .product-list {
     gap: 24px;
   }

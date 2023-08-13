@@ -1,113 +1,70 @@
 /* Sasha */
 
-@media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-    }
-
-        .products {
-            padding-top: 64px;
-        }
-    
-        .product-title {
-            font-size: 28px;
-            font-weight: 400;
-            line-height: 1.5;
-            text-transform: uppercase;
-            margin-bottom: 33px;
-            text-align: center;
-        }
-    
-        .product-img {
-            margin-bottom: 16px;
-        }
-    
-    
-        .product-text {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .img-tab {
-            display: none;
-        }
-
-        .desktop-cont {
-            display: none;
-        }
-
-        
+.products {
+  padding-bottom: 64px;
 }
 
+.product-title {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.product-img {
+  margin-bottom: 16px;
+}
+
+.product-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.product-item-tab {
+  display: none;
+}
+
+.product-item-desc {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
+  .padding-bottom {
+    padding-top: 100px;
+  }
 
-    .img-tab {
-        display: block;
-    }
+  .product-item-tab {
+    display: block;
+  }
 
-    .desktop-cont {
-        display: none;
-    }
+  .product-list {
+    display: flex;
+    gap: 16px;
+  }
 
-    .tab-cont {
-        display: flex;
-        gap: 16px;
-    }
+  .product-title {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
 
-    .product-title {
-        margin-bottom: 30px;
-    }
+  .product-text {
+    font-size: 18px;
+  }
 
-    .product-img {
-        margin-bottom: 15px;
-    }
+  .product-img {
+    margin-bottom: 15px;
+  }
 }
 
-
-
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-        padding: 0 60px;
-    }
+  .product-item-desc {
+    display: block;
+  }
 
-    .desktop-cont {
-        display: block;
-    }
-
-    .img-container {
-        display: flex;
-        gap: 24px;
-    }
-
-    .desktop-cont {
-        display: flex;
-        gap: 24px;
-    }
-
-    .tab-cont{
-        display: flex;
-        gap: 24px;
-    }
-
-    .img-mob {
-        width: 312px;
-    }
-
-    .img-tab {
-        width: 312px;
-    }
-
-    /* .product-title {
-        margin-bottom: 30px;
-    } */
-
-    /* .product-img {
-        margin-bottom: 15px;
-    } */
+  .product-list {
+    gap: 24px;
+  }
 }

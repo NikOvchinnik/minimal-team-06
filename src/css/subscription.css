@@ -1,1 +1,147 @@
 /* Artem */
+.subscription {
+  padding: 64px 0;
+}
+
+.subscription-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subscription-title {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subscription-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  padding: 11px 20px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid var(--input-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus,
+.form-input:hover {
+  border-color: var(--primary-color);
+}
+
+.form-input::placeholder {
+  color: var(--placeholder-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.checkbox-label {
+  color: #7a7a7a;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.checkbox-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--input-color);
+  margin-right: 8px;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon {
+  fill: transparent;
+}
+
+.form-checkbox:checked + .checkbox-label .checkbox-span {
+  background-color: var(--primary-color);
+}
+
+.form-checkbox:checked + .checkbox-label .checkbox-span .checkbox-icon {
+  fill: var(--white-color);
+}
+
+.subscription-button {
+  width: 224px;
+  padding: 17px 65px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 30px;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-button:hover {
+  background-color: var(--hover-color);
+}
+
+@media screen and (min-width: 768px) {
+  .subscription {
+    padding: 100px 0;
+  }
+
+  .subscription-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 536px;
+  }
+
+  .subscription-title {
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  .subscription-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .form-input::placeholder {
+    font-size: 18px;
+  }
+
+  .checkbox-label {
+    font-size: 18px;
+  }
+
+  .subscription-button {
+    font-size: 18px;
+    line-height: 1.33;
+    margin-top: 31px;
+  }
+
+  .subscription-container {
+    gap: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .subscription > .container {
+    max-width: 1094px;
+  }
+
+  .subscription {
+    padding: 100px 0 86px 0;
+  }
+
+  .subscription-container {
+    flex-direction: row;
+    gap: 100px;
+  }
+}

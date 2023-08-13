@@ -1,1 +1,67 @@
 /* Sasha */
+.products {
+  padding-bottom: 64px;
+}
+.product-title {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.product-img {
+  margin-bottom: 16px;
+}
+
+.product-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.product-item-tab {
+  display: none;
+}
+
+.product-item-desc {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .padding-bottom {
+    padding-top: 100px;
+  }
+
+  .product-item-tab {
+    display: block;
+  }
+
+  .product-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .product-title {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  .product-text {
+    font-size: 18px;
+  }
+
+  .product-img {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product-item-desc {
+    display: block;
+  }
+  .product-list {
+    gap: 24px;
+  }
+}

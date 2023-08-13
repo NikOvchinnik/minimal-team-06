@@ -1,1 +1,64 @@
 /* Nikita */
+.burger-menu {
+  background-color: var(--white-color);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  opacity: 1;
+}
+
+.burger-header-menu {
+  background-color: var(--background-secondary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.burger-close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 28px 0;
+}
+
+.burger-close-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--primary-color);
+}
+
+.burger-list {
+  padding-top: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.burger-nav-link {
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-header-menu {
+    padding: 0 32px;
+  }
+
+  .burger-close-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .burger-list {
+    padding-top: 158px;
+    gap: 30px;
+  }
+  .burger-nav-link {
+    font-size: 18px;
+  }
+}

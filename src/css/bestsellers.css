@@ -85,6 +85,10 @@
         font-size: 18px;               
     }
 
+    .hero-bestseller-container {
+        margin-bottom: 32px;
+    }
+
     .hero-bestseller {
         min-width: 704px;
         height: 489px;                
@@ -109,7 +113,40 @@
         padding: 0 60px;
     }
 
+    
+
+
     .hero-bestseller {
-        max-width: 536px;    
+        min-width: 536px; 
+        min-height: 489px;
+    }
+
+    .bestsellers-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+    }
+
+        .tab-img {
+            display: flex;
+            gap: 20px;
         }
+
+        .bestseller-img-container {
+        display: flex;
+        gap: 24px;
+        width: 1096px;
+    }
+
+        .bestsellers-img {
+            width: 258px;
+            height: 193px;
+        }
+
+        .bestseller-item {
+            height: 266px;
+        }
+
+
+
 }

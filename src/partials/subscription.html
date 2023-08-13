@@ -15,6 +15,7 @@
           placeholder="Name"
           type="name"
           required
+          minlength="2" maxlength="16"
         />
         <label for="user-email"></label>
         <input
@@ -24,6 +25,7 @@
           placeholder="E-mail"
           type="email"
           required
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         />
         <input
           class="form-checkbox visually-hidden"
@@ -36,7 +38,7 @@
         <label class="checkbox-label" for="newsletter">
           <span class="checkbox-span">
             <svg class="checkbox-icon" width="13" height="13">
-              <use href="../img/icons.svg#icon-check"></use>
+              <use href="./img/icons.svg#icon-check"></use>
             </svg>
           </span>
           Agree to subscribe to the newsletter
@@ -59,7 +61,7 @@
       />
       <img
         class="subscription-img"
-        src="./img/subscription-mob.jpg "
+        src="./img/subscription-tab.jpg "
         alt="book on table"
         width="704"
       />

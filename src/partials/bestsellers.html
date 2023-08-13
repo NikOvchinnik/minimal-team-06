@@ -2,54 +2,147 @@
 <section class="bestsellers">
   <div class="container">
     <h2 class="bestsellers-title">Bestsellers</h2>
-    <ul class="bestseller-list">
-      <li class="bestseller-item">
-        <img
-          class="bestsellers-img"
-          srcset="
-            ../img/bestsellers-mob-1.jpg    1x,
-            ../img/bestsellers-mob-1-2x.jpg 2x
-          "
-          src="../img/bestsellers-mob-1.jpg"
-          alt="moderm platform"
-          width="343"
-          height="193"
-        />
+    <div class="bestsellers-container">
+      <div class="bestsellers-main-item">
+        <picture>
+          <source
+            srcset="./img/bestsellers-1.jpg 1x, ./img/bestsellers-1-2x.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./img/bestsellers-tab-1.jpg    1x,
+              ./img/bestsellers-tab-1-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/bestsellers-mob-1.jpg    1x,
+              ./img/bestsellers-mob-1-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="bestsellers-img"
+            src="./img/bestsellers-tab-1.jpg"
+            alt="moderm platform"
+            width="704"
+          />
+        </picture>
         <h3 class="bestsellers-text">The modern platform bed</h3>
         <p class="bestsellers-price">750$</p>
-      </li>
-
-      <li class="bestseller-item">
-        <img
-          class="bestsellers-img"
-          srcset="
-            ../img/bestsellers-mob-2.jpg    1x,
-            ../img/bestsellers-mob-2-2x.jpg 2x
-          "
-          src="../img/bestsellers-mob-2.jpg"
-          alt="cozy lounge"
-          width="343"
-          height="193"
-        />
-        <h3 class="bestsellers-text">The Cozy Lounge Chair</h3>
-        <p class="bestsellers-price">230$</p>
-      </li>
-
-      <li class="bestseller-item">
-        <img
-          class="bestsellers-img"
-          srcset="
-            ../img/bestsellers-mob-3.jpg    1x,
-            ../img/bestsellers-mob-3-2x.jpg 2x
-          "
-          src="../img/bestsellers-mob-3.jpg"
-          alt="industrial accent"
-          width="343"
-          height="193"
-        />
-        <h3 class="bestsellers-text">The industrial accent chair</h3>
-        <p class="bestsellers-price">250$</p>
-      </li>
-    </ul>
+      </div>
+      <div class="bestssellers-block">
+        <ul class="bestseller-list">
+          <li class="bestseller-item">
+            <picture>
+              <source
+                srcset="./img/bestsellers-2.jpg 1x, ./img/bestsellers-2-2x.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers-tab-2.jpg    1x,
+                  ./img/bestsellers-tab-2-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers-mob-2.jpg    1x,
+                  ./img/bestsellers-mob-2-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="bestsellers-img"
+                src="./img/bestsellers-mob-2.jpg"
+                alt="cozy lounge"
+                width="343"
+              />
+            </picture>
+            <h3 class="bestsellers-text">The Cozy Lounge Chair</h3>
+            <p class="bestsellers-price">230$</p>
+          </li>
+          <li class="bestseller-item">
+            <picture>
+              <source
+                srcset="./img/bestsellers-3.jpg 1x, ./img/bestsellers-3-2x.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers-tab-3.jpg    1x,
+                  ./img/bestsellers-tab-3-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers-mob-3.jpg    1x,
+                  ./img/bestsellers-mob-3-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="bestsellers-img"
+                src="./img/bestsellers-mob-3.jpg"
+                alt="industrial accent"
+                width="343"
+              />
+            </picture>
+            <h3 class="bestsellers-text">The industrial accent chair</h3>
+            <p class="bestsellers-price">250$</p>
+          </li>
+          <li class="bestseller-item bestseller-item-tab">
+            <picture>
+              <source
+                srcset="./img/bestsellers-4.jpg 1x, ./img/bestsellers-4-2x.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers-tab-4.jpg    1x,
+                  ./img/bestsellers-tab-4-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                class="bestsellers-img"
+                src="./img/bestsellers-tab-4.jpg"
+                alt="sleec stand"
+                width="336"
+              />
+            </picture>
+            <h3 class="bestsellers-text">The sleek stand</h3>
+            <p class="bestsellers-price">300$</p>
+          </li>
+          <li class="bestseller-item bestseller-item-tab">
+             <picture>
+              <source
+                srcset="./img/bestsellers-5.jpg 1x, ./img/bestsellers-5-2x.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./img/bestsellers-tab-5.jpg    1x,
+                  ./img/bestsellers-tab-5-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                class="bestsellers-img"
+                src="./img/bestsellers-tab-5.jpg"
+                alt="minimalist sofa"
+                width="336"
+              />
+            </picture>
+            <h3 class="bestsellers-text">The minimalist sofa</h3>
+            <p class="bestsellers-price">650$</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>

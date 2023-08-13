@@ -1,42 +1,116 @@
 /* Sasha */
+
 .bestsellers {
-padding-bottom: 64px;
+  padding-bottom: 64px;
 }
 
-.bestsellers-title {    
-    font-size: 28px;    
-    font-weight: 400;
-    line-height: 1.5;    
-    text-transform: uppercase;
-    margin-bottom: 21px;
-    text-align: center;
+.bestsellers-title {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+  text-align: center;
 }
 
 .bestseller-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;  
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.bestseller-item {
-    width: 100%;
+.bestsellers-main-item {
+  margin-bottom: 30px;
 }
 
 .bestsellers-img {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
-.bestsellers-text {    
-    font-size: 16px;
-    font-weight: 400; 
-    line-height: 1.5;
-    margin-bottom: 10px;
+.bestsellers-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
-.bestsellers-price {    
-    font-size: 16px;    
-    font-weight: 700;
-    line-height: 1.5;     
+.bestsellers-price {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.bestseller-item-tab {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .bestseller-item-tab {
+    display: block;
+  }
+
+  .bestsellers {
+    padding-bottom: 100px;
+  }
+
+  .bestsellers-title {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  .bestsellers-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bestsellers-main-item {
+    margin-bottom: 32px;
+  }
+
+  .bestseller-list {
+    gap: 32px;
+  }
+
+  .bestseller-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .bestsellers-img {
+    margin-bottom: 15px;
+  }
+
+  .bestsellers-text {
+    font-size: 18px;
+  }
+
+  .bestsellers-price {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1096px;
+  }
+
+  .bestsellers-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bestsellers-main-item {
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+
+  .bestseller-list {
+    gap: 30px 20px;
+  }
+
+  .bestseller-item {
+    width: calc((100% - 20px) / 2);
+  }
 }

@@ -1,101 +1,176 @@
 /* Kristina */
 .footer {
-  background-color: var(--primary-color);
-  padding: 36px 0 16px 0;
-}
+    background-color: var(--primary-color);
+    padding: 36px 0 16px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo {
+    margin-bottom: 42px;
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+  }
+  
+  .footer-logo-icon {
+    fill: var(--white-color);
+    width: 100px;
+    height: 16px;
+  }
+  
+  .footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+  
+  .footer-nav-link {
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .address-maps-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 35px;
+  }
+  
+  .address-maps-text {
+    color: var(--white-color);
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+  }
+  
+  .address-contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 64px;
+  }
+  
+  .address-contact-link {
+    color: var(--white-color);
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+  }
+  
+  .address-email {
+    display: none;
+  }
+  
+  .footer-socials-list {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-socials-icon {
+    width: 28px;
+    height: 28px;
+    fill: var(--white-color);
+  }
+  
+  .footer-privacy {
+    text-align: center;
+    color: var(--white-color);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.099em;
+    opacity: 0.6;
+  }
+  
+  .footer-privacy-link {
+      text-decoration: underline;
+  }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-}
+  @media screen and (min-width: 768px) {
+    .footer {
+      padding: 36px 0;
+    }
+    
+    .footer-logo {
+        padding-top: 12px;
+    }
 
-.footer-logo {
-  margin-bottom: 42px;
-  display: flex;
-  align-items: center;
-  padding-top: 6px;
-}
+    .footer-logo-icon {
+        width: 127px;
+    }
+    
+    .footer-nav-list {
+        gap: 16px;
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
 
-.footer-logo-icon {
-  fill: var(--white-color);
-  width: 100px;
-  height: 16px;
-}
+    .footer-nav-link {
+      font-size: 18px;
+    }
 
-.footer-nav-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 36px;
-}
+    .address-maps-list {
+        gap: 24px;
+        margin-bottom: 64px;
+    }
 
-.footer-nav-link {
-  color: var(--white-color);
-  font-size: 16px;
-  line-height: 1.5;
-}
+    .address-maps-text {
+      font-size: 19px;
+    }
 
-.address-maps-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 35px;
-}
+    .address-contact-list {
+        gap: 24px;
+        margin-bottom: 0px;
+    }
 
-.address-maps-text {
-  color: var(--white-color);
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: 0.01em;
-}
+    .address-contact-link {
+      font-size: 19px;
+    }
 
-.address-contact-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 64px;
-}
+    .address-email {
+       display: block;
+    }
 
-.address-contact-link {
-  color: var(--white-color);
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: 0.01em;
-}
+    .footer-socials-icon {
+      width: 40px;
+      height: 40px;
+    }
 
-.address-email {
-  display: none;
-}
+    .footer-privacy {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.0594em;
+    }
+  }
 
-.footer-socials-list {
-  display: flex;
-  gap: 16px;
-}
+  @media screen and (min-width: 1440px) {
+    .footer-logo {
+      margin-bottom: 39px;
+    }
 
-.footer-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .footer-nav-list{
+      gap: 30px;
+    }
 
-.footer-socials-icon {
-  width: 28px;
-  height: 28px;
-  fill: var(--white-color);
-}
-
-.footer-privacy {
-  text-align: center;
-  color: var(--white-color);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.099em;
-  opacity: 0.6;
-}
-
-.footer-privacy-link {
-    text-decoration: underline;
-}
+    .address-maps-list {
+      margin-bottom: 35px;
+    }
+    
+    .footer-socials-list {
+      gap: 30px;
+    }
+  }

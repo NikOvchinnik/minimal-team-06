@@ -1,23 +1,113 @@
 /* Sasha */
-.products {
-padding-top: 64px;
+
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+        .products {
+            padding-top: 64px;
+        }
+    
+        .product-title {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-transform: uppercase;
+            margin-bottom: 33px;
+            text-align: center;
+        }
+    
+        .product-img {
+            margin-bottom: 16px;
+        }
+    
+    
+        .product-text {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .img-tab {
+            display: none;
+        }
+
+        .desktop-cont {
+            display: none;
+        }
+
+        
 }
 
-.product-title { 
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1.5;    
-    text-transform: uppercase;
-    margin-bottom: 33px;
-    text-align: center;
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .img-tab {
+        display: block;
+    }
+
+    .desktop-cont {
+        display: none;
+    }
+
+    .tab-cont {
+        display: flex;
+        gap: 16px;
+    }
+
+    .product-title {
+        margin-bottom: 30px;
+    }
+
+    .product-img {
+        margin-bottom: 15px;
+    }
 }
 
-.product-img {
-    margin-bottom: 16px;
+
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 60px;
+    }
+
+    .desktop-cont {
+        display: block;
+    }
+
+    .img-container {
+        display: flex;
+        gap: 24px;
+    }
+
+    .desktop-cont {
+        display: flex;
+        gap: 24px;
+    }
+
+    .tab-cont{
+        display: flex;
+        gap: 24px;
+    }
+
+    .img-mob {
+        width: 312px;
+    }
+
+    .img-tab {
+        width: 312px;
+    }
+
+    /* .product-title {
+        margin-bottom: 30px;
+    } */
+
+    /* .product-img {
+        margin-bottom: 15px;
+    } */
 }
-
-
-.product-text {
-    font-size: 16px;
-    line-height: 1.5;    
-} 

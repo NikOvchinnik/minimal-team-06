@@ -23,6 +23,11 @@
 
 .bestsellers-main-item {
   margin-bottom: 30px;
+  width: 100%;
+}
+
+.bestseller-item {
+  width: 100%;
 }
 
 .bestsellers-img {
@@ -93,11 +98,10 @@
 
 @media screen and (min-width: 1440px) {
   .bestsellers > .container {
-    max-width: 1096px;
+    max-width: 1216px;
   }
 
   .bestsellers-container {
-    display: flex;
     flex-direction: row;
   }
 
@@ -107,7 +111,8 @@
   }
 
   .bestseller-list {
-    gap: 30px 20px;
+    width: 536px;
+    gap: 24px 20px;
   }
 
   .bestseller-item {

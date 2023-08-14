@@ -26,7 +26,7 @@
   background-color: var(--white-color);
   border-radius: 8px;
   padding: 24px;
-  max-width: 343px;
+  width: 100%;;
 }
 
 .review {
@@ -44,9 +44,8 @@
 }
 
 .review-title {
-  line-height: 1.77;
+  line-height: 1.7;
   text-transform: uppercase;
-  margin-bottom: 2px;
 }
 
 .review-date {
@@ -75,7 +74,7 @@
   }
 
   .reviews-item {
-    max-width: 344px;
+    width: calc((100% - 16px) / 2);
   }
 
   .review-img-mob {
@@ -94,7 +93,6 @@
 
   .review-title {
     font-size: 20px;
-    line-height: 2.25;
   }
 
   .review-date {
@@ -122,7 +120,7 @@
   }
 
   .reviews-item {
-    max-width: 424px;
+    width: calc((100% - 48px) / 3);
   }
 
   .review-block {

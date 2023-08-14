@@ -9,6 +9,8 @@
 }
 
 .about-title {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -17,12 +19,10 @@
 
 .about-title::before {
   content: '';
-  width: 28px;
-  height: 1.3px;
+  width: 30px;
+  height: 1px;
   border: 1px solid #0a224a;
-  background-color: #0a224a;
   margin-right: 20px;
-  transform: translateY (-50%);
 }
 
 .about-subtitle {
@@ -50,18 +50,18 @@
 .about-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 170px;
 }
 
 .about-spn-text {
+  text-align: center;
   font-size: 50px;
   line-height: 1.5;
   margin-bottom: 14px;
 }
 
 .about-item-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -75,7 +75,6 @@
 @media screen and (min-width: 768px) {
   .about {
     background-color: var(--white-color);
-    padding-top: 100px;
   }
 
   .about-container {

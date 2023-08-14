@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.product-item {
+  width: 100%;
+}
+
 .product-img {
   margin-bottom: 16px;
 }

@@ -1,5 +1,9 @@
 /* Nikita */
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--background-secondary-color);
 }
 
@@ -14,6 +18,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  fill: #5f9ea0;
 }
 
 .header-logo-icon {
@@ -38,6 +48,11 @@
   width: 32px;
   height: 32px;
   fill: var(--primary-color);
+}
+
+.burger-icon:hover,
+.burger-icon:focus {
+  fill: #5f9ea0;
 }
 
 @media screen and (min-width: 768px) {
@@ -69,13 +84,23 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+  }
+
+  .header-item {
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 26px 0;
   }
 
   .header-link {
     line-height: 1.5;
+    padding: 26px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: #5f9ea0;
   }
 
   .burger-open-btn {

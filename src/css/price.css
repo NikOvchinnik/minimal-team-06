@@ -15,16 +15,23 @@
   border-bottom: 1px solid var(--primary-color);
 }
 
+.price-item:hover .price-item-text,
+.price-item:hover .price-spn {
+color: #5f9ea0;
+}
+
 .price-item-text {
   font-size: 28px;
   line-height: 1.5;
   text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .price-spn {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {

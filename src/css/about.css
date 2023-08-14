@@ -1,1 +1,122 @@
 /* Andrey */
+.about {
+  background-color: var(--background-secondary-color);
+}
+
+.about-block {
+  padding: 64px 16px;
+  background-color: var(--background-secondary-color);
+}
+
+.about-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-title::before {
+  content: '';
+  width: 28px;
+  height: 1.3px;
+  border: 1px solid #0a224a;
+  background-color: #0a224a;
+  margin-right: 20px;
+  transform: translateY (-50%);
+}
+
+.about-subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 170px;
+}
+
+.about-spn-text {
+  font-size: 50px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.about-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .about > .container {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    background-color: var(--white-color);
+    padding: 100px 0;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-block {
+    padding: 36px 64px;
+  }
+
+  .about-subtitle {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .about-list {
+    flex-direction: row;
+    gap: 33px;
+  }
+
+  .about-item-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-container {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .about-block {
+    padding: 36px 69px 34px 69px;
+    max-width: 760px;
+    max-height: 500px;
+  }
+}

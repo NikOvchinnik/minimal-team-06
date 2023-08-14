@@ -19,8 +19,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/minimal-team-06/assets/index-c3973687.js"></script>
-    <link rel="stylesheet" href="/minimal-team-06/assets/index-76e75b39.css">
+    <script type="module" crossorigin src="/minimal-team-06/assets/index-976780f0.js"></script>
+    <link rel="stylesheet" href="/minimal-team-06/assets/index-e4f3f516.css">
   </head>
   <body>
     <!-- Nikita -->
@@ -34,22 +34,22 @@
     <nav class="header-navigation">
       <ul class="header-list">
         <li class="header-item">
-          <a class="header-link" href="#">About us</a>
+          <a class="header-link" href="#about">About us</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#">Our products</a>
+          <a class="header-link" href="#products">Our products</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#">Prices</a>
+          <a class="header-link" href="#price">Prices</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#">Bestsellers</a>
+          <a class="header-link" href="#bestsellers">Bestsellers</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#">Reviews</a>
+          <a class="header-link" href="#reviews">Reviews</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="#">Contacts</a>
+          <a class="header-link" href="#footer">Contacts</a>
         </li>
       </ul>
     </nav>
@@ -61,9 +61,8 @@
   </div>
 </header>
 
-    <!-- Anastasiia -->
-
-<main>
+    <main>
+      <!-- Anastasiia -->
   <section class="hero">
     <div class="container hero-container">
       <div class="hero-first-container">
@@ -78,10 +77,9 @@
       </div>
     </div>
   </section>
-</main>
 
-    <!-- Andrey -->
-<section class="about">
+      <!-- Andrey -->
+<section class="about" id="about">
   <div class="container about-container">
     <div class="about-block">
       <h2 class="about-title">About us</h2>
@@ -138,9 +136,9 @@
   </div>
 </section>
 
-    <!-- Andrey -->
+      <!-- Andrey -->
 
-<section class="price">
+<section class="price" id="price">
   <div class="container">
     <h2 class="visually-hidden">Price</h2>
     <ul class="price-list">
@@ -164,8 +162,8 @@
   </div>
 </section>
 
-    <!-- Sasha-->
-<section class="products">
+      <!-- Sasha-->
+<section class="products" id="products">
   <div class="container">
     <h2 class="product-title">OUR PRODUCTS</h2>
     <ul class="product-list">
@@ -237,8 +235,8 @@
   </div>
 </section>
 
-    <!-- Sasha-->
-<section class="bestsellers">
+      <!-- Sasha-->
+<section class="bestsellers" id="bestsellers">
   <div class="container">
     <h2 class="bestsellers-title">Bestsellers</h2>
     <div class="bestsellers-container">
@@ -362,8 +360,8 @@
   </div>
 </section>
 
-    <!-- Artem-->
-<section class="reviews">
+      <!-- Artem-->
+<section class="reviews" id="reviews">
   <div class="container">
     <h2 class="reviews-title">Clients reviews</h2>
     <ul class="reviews-list">
@@ -441,8 +439,8 @@
   </div>
 </section>
 
-    <!-- Artem-->
-<section class="subscription">
+      <!-- Artem-->
+<section class="subscription" id="subscription">
   <div class="container subscription-container">
     <div class="subscription-block">
       <h2 class="subscription-title">Newsletter</h2>
@@ -512,8 +510,9 @@
   </div>
 </section>
 
+    </main>
     <!-- Kristina -->
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="container">
     <div class="footer-container">
       <div class="footer-nav-container">
@@ -633,38 +632,42 @@
 
     <!-- Nikita -->
 <div class="burger-menu is-hidden" data-burger>
-  <div class="burger-header-menu">
-    <a class="header-logo" href="./index.html"
-      ><svg class="header-logo-icon">
-        <use href="/minimal-team-06/assets/icons-f8ce6ef2.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <button class="burger-close-btn" type="button" data-burger-close>
-      <svg class="burger-close-icon">
-        <use href="/minimal-team-06/assets/icons-f8ce6ef2.svg#icon-close"></use>
-      </svg>
-    </button>
+  <div class="burger-header">
+    <div class="container burger-header-container">
+      <a class="header-logo" href="./index.html"
+        ><svg class="header-logo-icon">
+          <use href="/minimal-team-06/assets/icons-f8ce6ef2.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <button class="burger-close-btn" type="button" data-burger-close>
+        <svg class="burger-close-icon">
+          <use href="/minimal-team-06/assets/icons-f8ce6ef2.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
-  <ul class="burger-list">
-    <li class="burger-item">
-      <a class="burger-link current" href="#">About us</a>
-    </li>
-    <li class="burger-item">
-      <a class="burger-link" href="#">Our products</a>
-    </li>
-    <li class="burger-item">
-      <a class="burger-link" href="#">Prices</a>
-    </li>
-    <li class="burger-item">
-      <a class="burger-link" href="#">Bestsellers</a>
-    </li>
-    <li class="burger-item">
-      <a class="burger-link" href="#">Reviews</a>
-    </li>
-    <li class="burger-item">
-      <a class="burger-link" href="#">Contacts</a>
-    </li>
-  </ul>
+  <div class="burger-nav navigation">
+    <ul class="burger-list">
+      <li class="burger-item">
+        <a class="burger-link" href="#about">About us</a>
+      </li>
+      <li class="burger-item">
+        <a class="burger-link" href="#products">Our products</a>
+      </li>
+      <li class="burger-item">
+        <a class="burger-link" href="#price">Prices</a>
+      </li>
+      <li class="burger-item">
+        <a class="burger-link" href="#bestsellers">Bestsellers</a>
+      </li>
+      <li class="burger-item">
+        <a class="burger-link" href="#reviews">Reviews</a>
+      </li>
+      <li class="burger-item">
+        <a class="burger-link" href="#footer">Contacts</a>
+      </li>
+    </ul>
+  </div>
 </div>
 
 

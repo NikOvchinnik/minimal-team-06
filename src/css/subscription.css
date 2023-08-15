@@ -79,6 +79,7 @@
   width: 224px;
   padding: 17px 65px;
   background-color: var(--primary-color);
+  border: none;
   color: var(--white-color);
   font-size: 16px;
   line-height: 1.5;

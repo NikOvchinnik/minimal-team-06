@@ -28,7 +28,7 @@
 
 .header-logo:hover .header-logo-icon,
 .header-logo:focus .header-logo-icon{
-  fill: #5f9ea0;
+  fill: var(--hover-color);
 }
 
 .header-navigation {
@@ -52,7 +52,7 @@
 
 .burger-icon:hover,
 .burger-icon:focus {
-  fill: #5f9ea0;
+  fill: var(--hover-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -100,7 +100,7 @@
 
   .header-link:hover,
   .header-link:focus {
-    color: #5f9ea0;
+    color: var(--hover-color);
   }
 
   .burger-open-btn {

@@ -17,7 +17,7 @@
 
 .price-item:hover .price-item-text,
 .price-item:hover .price-spn {
-color: #5f9ea0;
+color: var(--hover-color);
 }
 
 .price-item-text {

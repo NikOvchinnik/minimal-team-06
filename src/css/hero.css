@@ -27,10 +27,7 @@
 .hero-btn {
   padding: 12px 65px;
   background-color: var(--primary-color);
-  display: flex;
   width: 224px;
-  justify-content: center;
-  align-items: center;
   color: var(--white-color);
   font-size: 16px;
   line-height: 1.5;
@@ -39,7 +36,7 @@
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--hover-color);
+  background-color: var(--hover-btn-color);
 }
 
 @media (min-device-pixel-ratio: 2),

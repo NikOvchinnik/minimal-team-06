@@ -24,7 +24,7 @@
 
 .footer-logo:hover .footer-logo-icon,
 .footer-logo:focus .footer-logo-icon {
-  fill: #5f9ea0;
+  fill: var(--hover-color);
 }
 
 .footer-nav-list {
@@ -44,7 +44,7 @@
 
 .footer-nav-link:hover,
 .footer-nav-link:focus {
-  color: #5f9ea0;
+  color: var(--hover-color);
 }
 
 .address-maps-list {
@@ -65,7 +65,7 @@
 
 .address-maps-text:hover,
 .address-maps-text:focus {
-  color: #5f9ea0;
+  color: var(--hover-color);
 }
 
 .address-contact-list {
@@ -86,7 +86,7 @@
 
 .address-contact-link:hover,
 .address-contact-link:focus {
-  color: #5f9ea0;
+  color: var(--hover-color);
 }
 
 .address-email-list {
@@ -113,7 +113,7 @@
 
 .footer-socials-link:hover .footer-socials-icon,
 .footer-socials-link:focus .footer-socials-icon{
-  fill: #5f9ea0;
+  fill: var(--hover-color);
 }
 
 .footer-privacy {

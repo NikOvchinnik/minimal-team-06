@@ -34,7 +34,7 @@
   gap: 14px;
 }
 
-.review-img-mob {
+.review-img {
   width: 48px;
   height: 48px;
 }
@@ -75,11 +75,6 @@
 
   .reviews-item {
     width: calc((100% - 16px) / 2);
-  }
-
-  .review-img-mob {
-    width: 56px;
-    height: 56px;
   }
 
   .review-img {

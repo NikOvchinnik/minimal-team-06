@@ -25,7 +25,7 @@
   content: '';
   width: 30px;
   height: 1px;
-  border: 1px solid #0a224a;
+  border: 1px solid var(--primary-color);
   margin-right: 20px;
   transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -59,7 +59,7 @@
 }
 
 .about-item:hover .about-spn-text {
-  color: #5f9ea0;
+  color: var(--hover-color);
 }
 
 .about-spn-text {
